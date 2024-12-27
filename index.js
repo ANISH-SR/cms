@@ -29,7 +29,6 @@ app.post("/user/signup", async (req,res)=>{
     const name = req.body.name;
 
 
-
     try{
         const hashed_password = await bcrypt.hash(password, 5);
         console.log(hashed_password);
